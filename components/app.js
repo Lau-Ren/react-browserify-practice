@@ -10,7 +10,7 @@ class App extends Component {
 
   render () {
     return (
-      <div>
+      <div className="container">
         <h1>Welcome to {this.props.name}</h1>
         <Shop/>
         <ShoppingCart/>

@@ -2,13 +2,13 @@ import React from "react";
 
 console.log("item is loaded")
 
-export default React.createClass({
+export default class Shop extends React.Component {
 
-  render: function() {
+  render () {
     return (
       <div>
 
       </div>
     );
-  },
-});
+  }
+};

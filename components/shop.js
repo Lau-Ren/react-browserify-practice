@@ -4,14 +4,15 @@ import Item from "./item";
 
 console.log("shop is loaded")
 
-export default React.createClass({
+export default class Shop extends React.Component {
 
-  render: function() {
+
+  render() {
     return (
-      <div className="shop">
+      <div className="shop box">
         <Item />
 
       </div>
     );
-  },
-});
+  }
+};
