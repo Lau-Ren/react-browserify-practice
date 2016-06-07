@@ -30,13 +30,17 @@ class App extends Component {
     console.log(currentCart, "curr cart!!")
     let newCart = currentCart.map(function(item){
       console.log(item, "item")
-      if(item !== itemToRemove){
+      if(item === itemToRemove){
+        return ""
+      } else {
         return item
       }
 
-    })
 
-    this.setState( {cartItems: newCart} )
+    })
+    let newerCart = newCart.filter(v=>v!='')
+
+    this.setState( {cartItems: newerCart} )
   }
 
   addToCart (itemToAdd) {

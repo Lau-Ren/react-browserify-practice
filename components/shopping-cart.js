@@ -12,8 +12,9 @@ export default class ShoppingCart extends React.Component {
         <p>Items in the cart</p>
         <ul>
           {
-            this.props.itemsToBuy.map( item => <CartItem removeFromCart={this.props.removeFromCart} info={item} />
-            )
+            this.props.itemsToBuy.map( (item, i) => {
+              return <CartItem removeFromCart={this.props.removeFromCart} info={item} index={i} />
+            })
           }
 
         </ul>

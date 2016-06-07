@@ -15,7 +15,9 @@ export default class Shop extends React.Component {
         <p>Items in the shop</p>
         <ul>
           {
-            items.map( item => <ShopItem addToCart={this.props.addToCart} info={item}/>)
+            items.map( (item, i) => {
+              return <ShopItem addToCart={this.props.addToCart} info={item} index={i}/>
+              })
           }
 
         </ul>
